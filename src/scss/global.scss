@@ -14,30 +14,31 @@
 /**
  * GLOBAL STYLES
  */
-html, body {
-  height: 100%;
+html,
+body {
+    height: 100%;
 }
 
 body {
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
-  &:focus {
-    outline: none;
-  }
+    flex: 1 0 auto;
+    &:focus {
+        outline: none;
+    }
 }
 
 hr {
-  display: block;
-  height: 1px;
-  max-width: 500px;
-  background: var(--color-stroke);
-  border: none;
-  margin: get-size(900) auto;
+    display: block;
+    height: 1px;
+    max-width: 500px;
+    background: var(--color-stroke);
+    border: none;
+    margin: get-size(900) auto;
 }
 
 /**
@@ -50,15 +51,18 @@ hr {
 @import 'utilities/wrapper';
 
 // Components
-@import 'components/button';
-@import 'components/heading-permalink';
+// @import 'components/button';
+// @import 'components/heading-permalink';
 @import 'components/intro';
-@import 'components/nav';
-@import 'components/pagination';
-@import 'components/post';
-@import 'components/post-list';
-@import 'components/site-head';
-@import 'components/site-foot';
+// @import 'components/nav';
+// @import 'components/pagination';
+// @import 'components/post';
+// @import 'components/post-list';
+// @import 'components/site-head';
+// @import 'components/site-foot';
 @import 'components/skip-link';
 @import 'components/syntax-highlighting';
-@import 'components/video-player';
+// @import 'components/video-player';
+
+// Views
+@import 'views/landing';

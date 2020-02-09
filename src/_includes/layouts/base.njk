@@ -13,13 +13,13 @@
   {% endblock %}
 </head>
 <body>
-  {% include "partials/global/site-head.njk" %}
+  {# {% include "partials/global/site-head.njk" %} #}
   {% block content %}
   {% endblock content %}
-  {% include "partials/global/site-foot.njk" %}
+  {# {% include "partials/global/site-foot.njk" %} #}
   {% block foot %}
   {% endblock %}
-  <script type="module" src="/js/components/theme-toggle.js" async defer></script>
+  {# <script type="module" src="/js/components/theme-toggle.js" async defer></script> #}
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
