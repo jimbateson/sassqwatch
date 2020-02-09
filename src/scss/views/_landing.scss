@@ -1,13 +1,14 @@
 .landing-content {
     .intro {
+        // See bottom of file for keyframes
+        animation: GradientShift 10s ease infinite;
         background: linear-gradient(
             90deg,
             rgba(166, 210, 253, 1) 0%,
             rgba(161, 227, 241, 1) 100%
         );
+        background-size: 200%;
         color: var(--color-text);
-        min-height: 100vh;
-        padding: 0;
 
         &__heading,
         &__summary {
@@ -37,6 +38,9 @@
 @media screen and (min-width: 1440px) {
     .landing-content {
         .intro {
+            min-height: 100vh;
+            padding: 0;
+
             &__summary {
                 max-width: 650px;
                 position: relative;
@@ -53,5 +57,19 @@
                 }
             }
         }
+    }
+}
+
+@keyframes GradientShift {
+    0% {
+        background-position: 0% 90%;
+    }
+
+    50% {
+        background-position: 100% 11%;
+    }
+
+    100% {
+        background-position: 0% 90%;
     }
 }
