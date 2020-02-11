@@ -20,11 +20,6 @@
         }
 
         .inner-wrapper {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            justify-content: center;
-
             svg {
                 height: auto;
                 max-width: 100%;
@@ -35,10 +30,17 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@include media-query('md') {
     .landing-content {
         .intro {
             min-height: 100vh;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .landing-content {
+        .intro {
             padding: 0;
 
             &__summary {
@@ -47,6 +49,10 @@
             }
 
             .inner-wrapper {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                justify-content: center;
                 position: relative;
 
                 svg {
