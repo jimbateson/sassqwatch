@@ -1,31 +1,38 @@
 .landing-content {
     .intro {
-        // See bottom of file for keyframes
-        animation: GradientShift 10s ease infinite;
-        background: linear-gradient(
-            90deg,
-            rgba(166, 210, 253, 1) 0%,
-            rgba(161, 227, 241, 1) 100%
-        );
-        background-size: 200%;
+        --color-text: #fff;
+        background: var(--color-theme-primary) url(/images/stripes-holding.png) no-repeat
+            25% top;
         color: var(--color-text);
 
-        &__heading,
-        &__summary {
-            color: var(--color-theme-primary);
+        img {
+            max-width: 375px;
         }
 
+        // Output: .landing-content .intro__heading
         &__heading {
             letter-spacing: 1px;
+            margin-bottom: 50px;
+        }
+
+        // Output: .landing-content .intro__summary
+        &__summary {
+            p {
+                font-size: get-size(500);
+
+                &:first-of-type {
+                    font-size: get-size(600);
+                }
+            }
+        }
+
+        // Output: .landing-content .intro__image
+        &__image {
+            text-align: center;
         }
 
         .inner-wrapper {
-            svg {
-                height: auto;
-                max-width: 100%;
-                width: 400px;
-                z-index: 0;
-            }
+            max-width: 1200px;
         }
     }
 }
@@ -34,48 +41,13 @@
     .landing-content {
         .intro {
             min-height: 100vh;
-        }
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .landing-content {
-        .intro {
             padding: 0;
 
-            &__summary {
-                max-width: 650px;
-                position: relative;
-            }
-
             .inner-wrapper {
+                align-items: center;
                 display: flex;
-                flex-direction: column;
                 height: 100vh;
-                justify-content: center;
-                position: relative;
-
-                svg {
-                    bottom: 20px;
-                    left: -250px;
-                    max-width: 400px;
-                    position: absolute;
-                }
             }
         }
-    }
-}
-
-@keyframes GradientShift {
-    0% {
-        background-position: 0% 90%;
-    }
-
-    50% {
-        background-position: 100% 11%;
-    }
-
-    100% {
-        background-position: 0% 90%;
     }
 }

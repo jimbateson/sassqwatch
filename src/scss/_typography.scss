@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Open Sans;
+    font-family: Varela Round;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-display: swap;
     src: local('Open Sans'), local('Open-Sans'),
-        url('/fonts/opensans-semibold-webfont.woff2') format('woff2'),
-        url('/fonts/opensans-semibold-webfont.woff') format('woff');
+        url('/fonts/varelaround-regular-webfont.woff2') format('woff2'),
+        url('/fonts/varelaround-regular-webfont.woff') format('woff');
 }
 
 @font-face {
@@ -26,13 +26,8 @@ body {
     @include apply-utility('font', 'base');
 }
 
-h1,
-h2,
-h3 {
-    @include apply-utility('font', 'display');
-}
-
 h1 {
+    @include apply-utility('font', 'display');
     font-size: get-size(700);
 }
 
