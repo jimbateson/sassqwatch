@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Sassqwatch
+title: Sassqwatch.
 metaTitle: Sassqwatch
 metaDesc: Fat Media internal FED/design email newsletter
 postsHeading: Latest posts
@@ -9,4 +9,4 @@ socialImage: ''
 ---
 Sassqwatch is a Fat Media internal email newsletter aimed primarily at design and front-end development. The aim is to make it easier for us to share knowledge, useful links/resources and also cool things we are working on.
 
-This site will act as an archive for all issues, and a place to find any articles we may have written.
+This site will act as an archive for all issues, and a place to find any articles we may have written. Keep an eye out for the first issue, coming soon!
