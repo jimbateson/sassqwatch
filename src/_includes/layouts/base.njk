@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
-  <link rel="icon" href="{{ site.faviconPath }}" type="image/png" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.faviconPath }}apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.faviconPath }}favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.faviconPath }}favicon-16x16.png">
+	<link rel="manifest" href="{{ site.faviconPath }}site.webmanifest">
+	<link rel="mask-icon" href="{{ site.faviconPath }}safari-pinned-tab.svg" color="#f0c400">
+	<link rel="shortcut icon" href="{{ site.faviconPath }}favicon.ico">
+	<meta name="msapplication-TileColor" content="#f0c400">
+	<meta name="msapplication-config" content="{{ site.faviconPath }}browserconfig.xml">
+	<meta name="theme-color" content="#f0c400">
+
   {% include "partials/global/meta-info.njk" %}
   <script>document.documentElement.classList.remove('no-js');</script>
   <style>{% include "assets/css/global.css" %}</style>
@@ -21,11 +31,11 @@
   {% endblock %}
   {# <script type="module" src="/js/components/theme-toggle.js" async defer></script> #}
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js');
-      });
-    }
+	if ('serviceWorker' in navigator) {
+	  window.addEventListener('load', () => {
+		navigator.serviceWorker.register('/service-worker.js');
+	  });
+	}
   </script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async defer></script>
 </body>
