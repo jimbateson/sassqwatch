@@ -1,11 +1,11 @@
 .landing-content {
     .intro {
         --color-text: #fff;
-        background: var(--color-theme-primary) url(/images/stripes-holding.png) no-repeat
-            25% top;
+        background: var(--color-theme-primary) url(/images/stripes.svg) no-repeat 25% top;
+        background-size: 850px;
         color: var(--color-text);
 
-        img {
+        svg {
             max-width: 100%;
         }
 
@@ -49,7 +49,7 @@
                 height: 100vh;
             }
 
-            img {
+            svg {
                 max-width: 375px;
             }
         }
